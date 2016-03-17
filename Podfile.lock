@@ -1,0 +1,27 @@
+PODS:
+  - Alamofire (3.2.1)
+  - AlamofireImage (2.3.1):
+    - Alamofire (~> 3.2)
+  - AlamofireObjectMapper (2.1.2):
+    - Alamofire (~> 3.2)
+    - ObjectMapper (~> 1.0)
+  - AsyncSwift (1.7.2)
+  - ObjectMapper (1.1.5)
+  - Signals (2.3.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - AlamofireImage
+  - AlamofireObjectMapper
+  - AsyncSwift
+  - Signals
+
+SPEC CHECKSUMS:
+  Alamofire: f11d8624a05f5d39e0c99309b3e600a3ba64298a
+  AlamofireImage: e52336282757bbe1644f075d6cb85f19c891f939
+  AlamofireObjectMapper: 82391c31f23e37bdb2660da174bcf81b202da39d
+  AsyncSwift: 46a78bceb11f0e5bb52747f740d9692ec78d2d7c
+  ObjectMapper: 528b1a6677a6acac7747edd508576983e76a9148
+  Signals: d47128787e1675858f956556397e482fd667bd96
+
+COCOAPODS: 0.39.0

@@ -1,25 +1,83 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="I0b-aS-HxU">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Home View Controller-->
+        <scene sceneID="cs4-5M-Pzw">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <tableViewController id="I0b-aS-HxU" customClass="HomeViewController" customModule="FacebookGraph" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="75" sectionHeaderHeight="28" sectionFooterHeight="28" id="7gh-bJ-Tnu">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="UserTableViewCell" id="Bv7-Ei-Czz" customClass="UserTableViewCell" customModule="FacebookGraph" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="600" height="75"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Bv7-Ei-Czz" id="kBd-1c-jwY">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="74.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5q8-Zj-ast">
+                                            <rect key="frame" x="13" y="13" width="48.5" height="48.5"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="48.5" id="FfP-p5-jLz"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FBa-NE-RbS">
+                                            <rect key="frame" x="81" y="13" width="500.5" height="19.5"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dTW-wf-bQ2">
+                                            <rect key="frame" x="81.5" y="32.5" width="500.5" height="17"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Facebook Id" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PL2-rg-BSw">
+                                            <rect key="frame" x="81" y="52" width="490.5" height="14.5"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="dTW-wf-bQ2" firstAttribute="top" secondItem="FBa-NE-RbS" secondAttribute="bottom" id="2Pm-hN-gLT"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="PL2-rg-BSw" secondAttribute="bottom" id="2TQ-xx-5mi"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="dTW-wf-bQ2" secondAttribute="trailing" constant="10" id="FZW-Vj-tIT"/>
+                                        <constraint firstItem="dTW-wf-bQ2" firstAttribute="leading" secondItem="5q8-Zj-ast" secondAttribute="trailing" constant="20" id="IY8-66-SJB"/>
+                                        <constraint firstItem="PL2-rg-BSw" firstAttribute="leading" secondItem="5q8-Zj-ast" secondAttribute="trailing" constant="20" id="UcV-Nb-He9"/>
+                                        <constraint firstItem="5q8-Zj-ast" firstAttribute="leading" secondItem="kBd-1c-jwY" secondAttribute="leadingMargin" constant="5" id="XeP-tY-J3B"/>
+                                        <constraint firstItem="FBa-NE-RbS" firstAttribute="top" secondItem="kBd-1c-jwY" secondAttribute="topMargin" constant="5" id="gdI-1Z-x8u"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="5q8-Zj-ast" secondAttribute="bottom" constant="5" id="pYE-hj-eNl"/>
+                                        <constraint firstItem="FBa-NE-RbS" firstAttribute="leading" secondItem="5q8-Zj-ast" secondAttribute="trailing" constant="20" id="tzL-gC-Zvi"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="PL2-rg-BSw" secondAttribute="trailing" constant="20" id="uGS-Hd-nZJ"/>
+                                        <constraint firstItem="5q8-Zj-ast" firstAttribute="top" secondItem="kBd-1c-jwY" secondAttribute="topMargin" constant="5" id="wGz-Ol-aeI"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="FBa-NE-RbS" secondAttribute="trailing" constant="10" id="zTJ-BP-6P5"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="emailLabel" destination="dTW-wf-bQ2" id="5Sw-kV-UQq"/>
+                                    <outlet property="facebookIdLabel" destination="PL2-rg-BSw" id="nZX-fD-NHU"/>
+                                    <outlet property="nameLabel" destination="FBa-NE-RbS" id="G4i-wa-1BL"/>
+                                    <outlet property="pictureImageView" destination="5q8-Zj-ast" id="5si-Nf-Ifp"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="I0b-aS-HxU" id="SCb-5U-GpD"/>
+                            <outlet property="delegate" destination="I0b-aS-HxU" id="KUD-Hp-a3N"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VEM-N6-5Gu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="475" y="332"/>
         </scene>
     </scenes>
 </document>

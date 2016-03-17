@@ -8,12 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		536BC1661C9A40040057F4DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536BC1651C9A40040057F4DC /* AppDelegate.swift */; };
-		536BC1681C9A40040057F4DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536BC1671C9A40040057F4DC /* ViewController.swift */; };
+		536BC1681C9A40040057F4DC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536BC1671C9A40040057F4DC /* HomeViewController.swift */; };
 		536BC16B1C9A40040057F4DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 536BC1691C9A40040057F4DC /* Main.storyboard */; };
 		536BC16D1C9A40040057F4DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 536BC16C1C9A40040057F4DC /* Assets.xcassets */; };
 		536BC1701C9A40040057F4DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 536BC16E1C9A40040057F4DC /* LaunchScreen.storyboard */; };
 		536BC17B1C9A40040057F4DC /* FacebookGraphTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536BC17A1C9A40040057F4DC /* FacebookGraphTests.swift */; };
 		536BC1861C9A40040057F4DC /* FacebookGraphUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536BC1851C9A40040057F4DC /* FacebookGraphUITests.swift */; };
+		536BC1951C9A472E0057F4DC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536BC1941C9A472E0057F4DC /* User.swift */; };
+		536BC1971C9A484A0057F4DC /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536BC1961C9A484A0057F4DC /* Person.swift */; };
+		53EBC2DE1C9A4A62002CF231 /* FacebookDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EBC2DD1C9A4A62002CF231 /* FacebookDao.swift */; };
+		53EBC2E11C9A4AC0002CF231 /* FacebookApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EBC2E01C9A4AC0002CF231 /* FacebookApi.swift */; };
+		53EBC2E31C9A4D96002CF231 /* FacebookEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EBC2E21C9A4D96002CF231 /* FacebookEndPoint.swift */; };
+		53EBC2E51C9A562B002CF231 /* SearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EBC2E41C9A562B002CF231 /* SearchResponse.swift */; };
+		53EBC2E71C9A6355002CF231 /* ImageAutoDownloadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EBC2E61C9A6355002CF231 /* ImageAutoDownloadable.swift */; };
+		53EBC2ED1C9A6931002CF231 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EBC2EC1C9A6931002CF231 /* UserTableViewCell.swift */; };
+		53EBC2F01C9AEB1D002CF231 /* FileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EBC2EF1C9AEB1D002CF231 /* FileService.swift */; };
+		A400D3C0BB5C9B36BCC24C7B /* Pods_FacebookGraph.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E649E4E9300717BF5693102 /* Pods_FacebookGraph.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +44,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4E649E4E9300717BF5693102 /* Pods_FacebookGraph.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FacebookGraph.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		536BC1621C9A40040057F4DC /* FacebookGraph.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FacebookGraph.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		536BC1651C9A40040057F4DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		536BC1671C9A40040057F4DC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		536BC1671C9A40040057F4DC /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		536BC16A1C9A40040057F4DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		536BC16C1C9A40040057F4DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		536BC16F1C9A40040057F4DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +58,17 @@
 		536BC1811C9A40040057F4DC /* FacebookGraphUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FacebookGraphUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		536BC1851C9A40040057F4DC /* FacebookGraphUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookGraphUITests.swift; sourceTree = "<group>"; };
 		536BC1871C9A40040057F4DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		536BC1941C9A472E0057F4DC /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		536BC1961C9A484A0057F4DC /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		53EBC2DD1C9A4A62002CF231 /* FacebookDao.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookDao.swift; sourceTree = "<group>"; };
+		53EBC2E01C9A4AC0002CF231 /* FacebookApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookApi.swift; sourceTree = "<group>"; };
+		53EBC2E21C9A4D96002CF231 /* FacebookEndPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookEndPoint.swift; sourceTree = "<group>"; };
+		53EBC2E41C9A562B002CF231 /* SearchResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResponse.swift; sourceTree = "<group>"; };
+		53EBC2E61C9A6355002CF231 /* ImageAutoDownloadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageAutoDownloadable.swift; sourceTree = "<group>"; };
+		53EBC2EC1C9A6931002CF231 /* UserTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
+		53EBC2EF1C9AEB1D002CF231 /* FileService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileService.swift; sourceTree = "<group>"; };
+		6DE666D5530CB0D7AE017399 /* Pods-FacebookGraph.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FacebookGraph.release.xcconfig"; path = "Pods/Target Support Files/Pods-FacebookGraph/Pods-FacebookGraph.release.xcconfig"; sourceTree = "<group>"; };
+		E20AC4287B26ACB9C24F4D5F /* Pods-FacebookGraph.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FacebookGraph.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FacebookGraph/Pods-FacebookGraph.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A400D3C0BB5C9B36BCC24C7B /* Pods_FacebookGraph.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +97,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		436FC7DC46FB7DCDE6894057 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4E649E4E9300717BF5693102 /* Pods_FacebookGraph.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		536BC1591C9A40040057F4DC = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +112,8 @@
 				536BC1791C9A40040057F4DC /* FacebookGraphTests */,
 				536BC1841C9A40040057F4DC /* FacebookGraphUITests */,
 				536BC1631C9A40040057F4DC /* Products */,
+				656E885D3D4F1AB000C35838 /* Pods */,
+				436FC7DC46FB7DCDE6894057 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +130,16 @@
 		536BC1641C9A40040057F4DC /* FacebookGraph */ = {
 			isa = PBXGroup;
 			children = (
-				536BC1651C9A40040057F4DC /* AppDelegate.swift */,
-				536BC1671C9A40040057F4DC /* ViewController.swift */,
-				536BC1691C9A40040057F4DC /* Main.storyboard */,
 				536BC16C1C9A40040057F4DC /* Assets.xcassets */,
-				536BC16E1C9A40040057F4DC /* LaunchScreen.storyboard */,
+				53EBC2EB1C9A6904002CF231 /* Common */,
+				53EBC2DC1C9A4A50002CF231 /* DAOs */,
 				536BC1711C9A40040057F4DC /* Info.plist */,
+				536BC1931C9A47060057F4DC /* Models */,
+				53EBC2DF1C9A4AAC002CF231 /* Network */,
+				53EBC2EE1C9AEB0B002CF231 /* Services */,
+				53EBC2EA1C9A68FD002CF231 /* Storyboards */,
+				53EBC2E81C9A662B002CF231 /* ViewControllers */,
+				53EBC2E91C9A68F0002CF231 /* Views */,
 			);
 			path = FacebookGraph;
 			sourceTree = "<group>";
@@ -125,6 +162,84 @@
 			path = FacebookGraphUITests;
 			sourceTree = "<group>";
 		};
+		536BC1931C9A47060057F4DC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				536BC1941C9A472E0057F4DC /* User.swift */,
+				536BC1961C9A484A0057F4DC /* Person.swift */,
+				53EBC2E41C9A562B002CF231 /* SearchResponse.swift */,
+				53EBC2E61C9A6355002CF231 /* ImageAutoDownloadable.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		53EBC2DC1C9A4A50002CF231 /* DAOs */ = {
+			isa = PBXGroup;
+			children = (
+				53EBC2DD1C9A4A62002CF231 /* FacebookDao.swift */,
+			);
+			name = DAOs;
+			sourceTree = "<group>";
+		};
+		53EBC2DF1C9A4AAC002CF231 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				53EBC2E01C9A4AC0002CF231 /* FacebookApi.swift */,
+				53EBC2E21C9A4D96002CF231 /* FacebookEndPoint.swift */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		53EBC2E81C9A662B002CF231 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				536BC1671C9A40040057F4DC /* HomeViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		53EBC2E91C9A68F0002CF231 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				53EBC2EC1C9A6931002CF231 /* UserTableViewCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		53EBC2EA1C9A68FD002CF231 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				536BC16E1C9A40040057F4DC /* LaunchScreen.storyboard */,
+				536BC1691C9A40040057F4DC /* Main.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		53EBC2EB1C9A6904002CF231 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				536BC1651C9A40040057F4DC /* AppDelegate.swift */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		53EBC2EE1C9AEB0B002CF231 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				53EBC2EF1C9AEB1D002CF231 /* FileService.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		656E885D3D4F1AB000C35838 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E20AC4287B26ACB9C24F4D5F /* Pods-FacebookGraph.debug.xcconfig */,
+				6DE666D5530CB0D7AE017399 /* Pods-FacebookGraph.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +247,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 536BC18A1C9A40040057F4DC /* Build configuration list for PBXNativeTarget "FacebookGraph" */;
 			buildPhases = (
+				E5C49B2C02E06BA58D70E519 /* Check Pods Manifest.lock */,
 				536BC15E1C9A40040057F4DC /* Sources */,
 				536BC15F1C9A40040057F4DC /* Frameworks */,
 				536BC1601C9A40040057F4DC /* Resources */,
+				15D39A63A8641CC7B38A6668 /* Embed Pods Frameworks */,
+				2BE269171DF75F3CD4D2DB7A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -251,13 +369,70 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		15D39A63A8641CC7B38A6668 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FacebookGraph/Pods-FacebookGraph-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2BE269171DF75F3CD4D2DB7A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FacebookGraph/Pods-FacebookGraph-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5C49B2C02E06BA58D70E519 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		536BC15E1C9A40040057F4DC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				536BC1681C9A40040057F4DC /* ViewController.swift in Sources */,
+				536BC1971C9A484A0057F4DC /* Person.swift in Sources */,
+				53EBC2E71C9A6355002CF231 /* ImageAutoDownloadable.swift in Sources */,
+				53EBC2DE1C9A4A62002CF231 /* FacebookDao.swift in Sources */,
+				536BC1681C9A40040057F4DC /* HomeViewController.swift in Sources */,
+				53EBC2F01C9AEB1D002CF231 /* FileService.swift in Sources */,
+				53EBC2ED1C9A6931002CF231 /* UserTableViewCell.swift in Sources */,
+				53EBC2E31C9A4D96002CF231 /* FacebookEndPoint.swift in Sources */,
+				53EBC2E51C9A562B002CF231 /* SearchResponse.swift in Sources */,
 				536BC1661C9A40040057F4DC /* AppDelegate.swift in Sources */,
+				53EBC2E11C9A4AC0002CF231 /* FacebookApi.swift in Sources */,
+				536BC1951C9A472E0057F4DC /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,6 +572,7 @@
 		};
 		536BC18B1C9A40040057F4DC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E20AC4287B26ACB9C24F4D5F /* Pods-FacebookGraph.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FacebookGraph/Info.plist;
@@ -408,6 +584,7 @@
 		};
 		536BC18C1C9A40040057F4DC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DE666D5530CB0D7AE017399 /* Pods-FacebookGraph.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FacebookGraph/Info.plist;
@@ -484,6 +661,7 @@
 				536BC18C1C9A40040057F4DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		536BC18D1C9A40040057F4DC /* Build configuration list for PBXNativeTarget "FacebookGraphTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +670,7 @@
 				536BC18F1C9A40040057F4DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		536BC1901C9A40040057F4DC /* Build configuration list for PBXNativeTarget "FacebookGraphUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +679,7 @@
 				536BC1921C9A40040057F4DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
